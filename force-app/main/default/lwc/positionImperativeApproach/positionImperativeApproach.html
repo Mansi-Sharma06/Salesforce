@@ -1,0 +1,33 @@
+<template>
+  <lightning-card>
+      <div>
+          <lightning-button label="New Positions" onclick={loadNewPositions}></lightning-button>
+          <lightning-button label="Open Positions" onclick={loadOpenPositions}></lightning-button>
+          <lightning-button label="Close Positions" onclick={loadClosePositions}></lightning-button>
+      </div>
+      <table>
+          <thead>
+              <tr>
+                <th>Position Name</th>
+                <th>Date Opened</th>
+                <th>Date Closed</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Status</th>
+              </tr>
+          </thead>
+          <tbody>
+              <template for:each={posList} for:item="pos">
+                  <tr key={pos.Id}>
+                    <td>{pos.Name}</td>
+                    <td>{pos.Date_opened__c}</td>
+                    <td>{pos.Date_closed__c} </td>
+                    <td>{pos.Department__c} </td>
+                    <td>{pos.Location__c} </td>
+                    <td>{pos.Status__c} </td>
+                  </tr>
+              </template>
+          </tbody>
+      </table>
+  </lightning-card>
+</template>

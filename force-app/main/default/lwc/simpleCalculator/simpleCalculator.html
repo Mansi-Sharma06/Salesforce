@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+      <div class="slds-box header-message">
+        Simple Calculator
+      </div>
+      <div class="slds-box">
+        <lightning-input type="number" label="First Number" onblur={handleFirstNumber}></lightning-input>
+        <lightning-input type="number" label="Second Number" onblur={handleSecondNumber}></lightning-input>
+      </div>
+      <div class="slds-box">
+        Result is : {result}
+      </div>
+
+    <div class="slds-box">
+      <lightning-button label="Add" onclick={add}></lightning-button>
+      <lightning-button label="Sub" onclick={sub}></lightning-button>
+      <lightning-button label="Mul" onclick={mul}></lightning-button>
+      <lightning-button label="Div" onclick={div}></lightning-button>
+    </div>
+    </lightning-card>
+</template>

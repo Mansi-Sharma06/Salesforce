@@ -1,0 +1,24 @@
+<template>
+  <lightning-card title="List of Opportunities fetched">
+  <table>
+      <thead>
+          <tr>
+              <th>Opportunity Name</th>
+              <th>Stage Name</th>
+              <th>Type</th>
+              <th>Close Date</th>
+          </tr>
+      </thead>
+      <tbody>
+          <template for:each={oppList.data} for:item="opp">
+              <tr key={opp.Id}>
+                  <td>{opp.Name}</td>
+                  <td>{opp.StageName}</td>
+                  <td>{opp.Type} </td>
+                  <td>{opp.CloseDate}   </td>
+              </tr>
+          </template>
+      </tbody>
+  </table>
+</lightning-card>
+</template>

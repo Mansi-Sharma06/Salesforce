@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Position Records">
+      <lightning-button label="Delete Position" onclick={handleClick}></lightning-button>
+      <lightning-datatable
+          key-field="Id"
+          data={posList.data}
+          columns={posColumns}
+          max-row-selection="1"
+          onrowselection={handleRowSelection}>
+      </lightning-datatable>
+  </lightning-card>
+</template>

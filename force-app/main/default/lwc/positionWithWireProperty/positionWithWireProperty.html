@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="List of Positions fetched">
+  <table>
+      <thead>
+          <tr>
+              <th>Position Name</th>
+              <th>Date Opened</th>
+              <th>Date Closed</th>
+              <th>Department</th>
+              <th>Location</th>
+          </tr>
+      </thead>
+      <tbody>
+          <template for:each={posList.data} for:item="pos">
+              <tr key={pos.Id}>
+                  <td>{pos.Name}</td>
+                  <td>{pos.Date_opened__c}</td>
+                  <td>{pos.Date_closed__c} </td>
+                  <td>{pos.Department__c} </td>
+                  <td>{pos.Location__c} </td>
+              </tr>
+          </template>
+      </tbody>
+  </table>
+</lightning-card>
+</template>

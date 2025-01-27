@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Arrow Function With This Keyword Importance">
+
+    <div>
+      <lightning-button label="Refresh" icon-name= "utility:refresh"  onclick={updateDataTimeUsingCallback}></lightning-button>
+      <lightning-button label="Refresh with Variables" icon-name= "utility:refresh"  onclick={updateDataTimeUsingVariable}></lightning-button>
+      <lightning-button label="Refresh with Bind Function" icon-name= "utility:refresh"  onclick={updateDataTimeUsingBindFunction}></lightning-button>
+      <lightning-button label="Refresh with Arrow Function" icon-name= "utility:refresh"  onclick={updateDataTimeUsingArrowFunction}></lightning-button>
+    
+    </div>
+  </lightning-card>
+
+  Today's DateTime is : {todaysDateTime}
+  
+  </template>

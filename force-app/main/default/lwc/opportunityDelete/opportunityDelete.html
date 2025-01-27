@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Opportunity Records">
+      <lightning-button label="Delete Opportunity" onclick={handleClick}></lightning-button>
+      <lightning-datatable
+          key-field="Id"
+          data={oppList.data}
+          columns={oppColumns}
+          max-row-selection="1"
+          onrowselection={handleRowSelection}>
+      </lightning-datatable>
+  </lightning-card>
+</template>
