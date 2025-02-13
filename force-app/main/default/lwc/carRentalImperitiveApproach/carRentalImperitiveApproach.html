@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Available Car for Rent">
+      <table>
+          <thead>
+              <tr>
+                  <th>Car Name</th>
+                  <th>Category</th>
+                  <th>Model</th>
+                  <th>Rental Cost</th>
+                  <th>Availability</th>
+              </tr>
+          </thead>
+          <tbody>
+              <template for:each={carList} for:item="car">
+                  <tr key={car.Id}>
+                      <td>{car.Car_Name__c}</td>
+                      <td>{car.Category__c}</td>
+                      <td>{car.Model__c}</td>
+                      <td>{car.Rental_Cost__c}</td>
+                      <td>{car.Car_Availability__c}</td>
+                  </tr>
+              </template>
+          </tbody>
+      </table>
+  </lightning-card>
+</template>

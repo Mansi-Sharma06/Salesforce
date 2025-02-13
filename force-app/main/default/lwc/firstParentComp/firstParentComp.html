@@ -1,0 +1,7 @@
+<template>
+  <lightning-card title="Child to Parent Communication">
+    <p> Message from Child:{messageFromChild}</p>
+
+    <c-first-child-comp onchildevent={handleMessageFromChild}></c-first-child-comp>
+  </lightning-card>
+</template>

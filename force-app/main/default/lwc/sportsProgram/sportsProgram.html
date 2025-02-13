@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="Sports Program">
+    <template if:true={programs}>
+      <ul>
+        <template for:each={programs} for:item="program">
+          <li key ={program.Id}>
+            <lightning-button
+            label={program.Name}
+            data-id={program.Id}
+            onclick={handleSelect}>
+            </lightning-button>
+          </li>
+        </template>
+      </ul>
+    </template>
+
+    <template if:true={selectedProgramId}>
+            <lightning-button
+            label="Delete"
+            variant="destructive"
+            onclick={handleDelete}>
+            </lightning-button>
+          
+    </template>
+
+  </lightning-card>
+    
+</template>

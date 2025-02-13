@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Get Record Example">
+      <template if:true={account}>
+        <p>Name: {account.Name.value}</p>
+        <p>AnnualRevenue: {account.AnnualRevenue.value}</p>
+        <p>Type: {account.Type.value}</p>
+        <p>Industry: {account.Industry.value}</p>
+      </template>
+    </lightning-card>
+</template>
