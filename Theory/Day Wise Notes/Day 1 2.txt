@@ -1,0 +1,99 @@
+We have 2 types of User Interface in salesforce:
+
+1. Salesforce Classic --> It is an older one. 
+2. Salesforce Lightning --> This is the latest UI and we work on this interface.
+
+Some Terminologies from salesforce Platform:
+1. Org : It is "Our Instance of Salesforce" where we can have users logged in, and all the data and configuration is there inside the org.
+2. App : It is a collection of objects and tabs, which is created for a specific purpose.
+App can be of 2 types:
+1. Standard App : It is an app given and created by Salesforce itself.
+2. Custom App : It is an app by the user according to the requirements.
+
+3. Object: It is used to hold the actual data and it is available in the backend.
+Object can be of 2 types:
+1. Standard Object : Created and given by salesforce itself.
+2. Custom Object : Created by the user.
+
+4. Tab : To make the users interact with the object, we create a tab for each object and it is available in front end. 
+
+5. Field : 
+Field can be of 2 types:
+1. Standard field : Created and given by salesforce itself.
+2. Custom field : Created by the user.
+
+6. Record
+
+Sales Object/ CRM objects --> Standard Objects
+
+1. Campaign --> to store the details of the marketing Campaign.
+2. Lead --> to store the details of the Prospect/interested Customers.
+3. Account --> to store the details of the client Organization.
+4. contact --> to store the details of the POC from the Client Organization.
+5. Opportunity --> 
+Object --> Campaign
+Tab --> Campaigns
+
+Object --> Lead
+Tab --> Leads
+
+Object --> Position 
+Tab --> Positions
+
+There are 6 standard fields available in any salesforce object:
+1. Name 
+2. Id
+3. Created by
+4. last modified by
+5. Currency
+6. Owner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
